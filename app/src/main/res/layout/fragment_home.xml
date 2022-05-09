@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_rv"
+        />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_task_btn"
         app:layout_constraintBottom_toBottomOf="parent"
